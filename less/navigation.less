@@ -1,6 +1,11 @@
 // Navigation Styles here
 
 .container {
+
+  @media @mobile {
+    padding: 20px 2%;
+  }
+
   header {
     .default-layout(column, space-between, center);
     margin-top: @div-spacing;
@@ -21,6 +26,29 @@
         text-decoration: none;
         font-size: 1.8rem;
         margin-left: 2.5rem;
+
+        @media @mobile {
+          margin-left: 0;
+        }
+      }
+
+      .logo {
+        @media @mobile {
+          text-align: center;
+          margin-bottom: @div-spacing;
+        }
+      }
+
+      .nav-links {
+        @media @mobile {
+          width: 100%;
+          text-align: center;
+          .default-layout(row, space-around, center);
+        }
+      }
+
+      @media @mobile {
+        .default-layout(column, space-between, center);
       }
     }
   }
