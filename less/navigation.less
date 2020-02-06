@@ -1,1 +1,27 @@
 // Navigation Styles here
+
+.container {
+  header {
+    .default-layout(column, space-between, center);
+    margin-top: @div-spacing;
+    margin-bottom: @div-spacing;
+
+    nav {
+      width: 100%;
+      .default-layout(row, space-between, center);
+      padding-bottom: 15px;
+      border-bottom: @border-dash @navigation-border;
+
+      h1 {
+        font-size: 5rem;
+      }
+
+      a {
+        color: black;
+        text-decoration: none;
+        font-size: 1.8rem;
+        margin-left: 2.5rem;
+      }
+    }
+  }
+}

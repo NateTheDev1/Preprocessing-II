@@ -1,1 +1,16 @@
 // Mixins in here
+
+.default-layout(@direction, @justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+  flex-direction: @direction;
+}
+
+.default-button(@border-radius, @color, @background) {
+  width: 100%;
+  text-align: center;
+  color: @color;
+  background: @background;
+  border-radius: @border-radius;
+}
